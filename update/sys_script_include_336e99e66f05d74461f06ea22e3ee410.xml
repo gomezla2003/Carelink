@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_sthc_carelink.Carelink</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Carelink</name>
+        <script><![CDATA[var Carelink = Class.create();
+Carelink.prototype = {
+    initialize: function() {
+    },
+	
+	getUser: function (param){
+		
+		var currentUser = gs.getUser();
+		var users = [];
+		var grUser = new GlideRecord('x_sthc_carelink_table');
+		grUser.addQuery('sys_id',param);
+		grUser.query();
+
+		while (grUser.next()) {
+			var CLuser = {};
+			CLuser.id = grUser.getUniqueValue();
+			CLuser.name = grUser.getDisplayValue('name');
+			CLuser.phone = grUser.getDisplayValue('mobile_phone');
+			CLuser.providers = grUser.getDisplayValue('practice_providers');
+			CLuser.role = grUser.getDisplayValue('carelink_role');
+			CLuser.reason = grUser.getDisplayValue('reason_for_access');
+			CLuser.email = grUser.getDisplayValue('email');
+			CLuser.manager = grUser.getValue('manager');
+			
+			
+			users.push(CLuser);
+		}
+		return (users);
+	},
+	
+	getRequest: function (param){
+		var request = new GlideRecord('sc_req_item');
+		request.addQuery('request.requested_for',param);
+		request.query();
+		while(request.next()){
+			var requestID = request.sys_id;
+		}
+	
+		return (requestID);
+	},
+	
+	
+	getApproval: function (reqID){
+		
+	var app = new GlideRecord('sc_req_item');
+	app.addQuery('sys_id',reqID);
+	app.query();
+	while (app.next()){
+			var status = app.approval;
+	}	
+return (status);
+		
+	},
+	
+	
+		
+	
+    type: 'Carelink'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-27 16:45:12</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>336e99e66f05d74461f06ea22e3ee410</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Carelink</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sys_script_include_336e99e66f05d74461f06ea22e3ee410</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-04-03 23:04:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

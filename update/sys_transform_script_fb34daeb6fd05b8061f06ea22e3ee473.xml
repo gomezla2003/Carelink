@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Carelink Signature Translation">ea33deab6fd05b8061f06ea22e3ee475</map>
+        <order>100</order>
+        <script><![CDATA[attachPhoto();
+
+
+function attachPhoto(){
+//gs.log('User Photo Script: Attach Photo'); 
+var sysDecodedAttachment = new GlideSysAttachment();
+var DecodedBytes = GlideStringUtil.base64DecodeAsBytes(source.signature);
+var attID = sysDecodedAttachment.write(target, 'signature', 'image/jpeg', DecodedBytes);
+var newAttachment = new GlideRecord("sys_attachment");
+newAttachment.addQuery("sys_id", attID);
+newAttachment.query();
+if (newAttachment.next()) {
+newAttachment.table_name = "ZZ_YYsys_user";
+newAttachment.table_sys_id = target.sys_id;
+newAttachment.content_type = 'image/jpeg';
+newAttachment.update();
+}
+} ]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-02-21 16:27:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fb34daeb6fd05b8061f06ea22e3ee473</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sys_transform_script_fb34daeb6fd05b8061f06ea22e3ee473</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-12 17:41:23</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>

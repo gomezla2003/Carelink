@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>section.page {&#13;
+&#13;
+}&#13;
+section.page, main.body {&#13;
+ padding-top: 0px !important;&#13;
+ padding-left: 60px !important;&#13;
+ padding-right: 60px !important&#13;
+}</css>
+        <draft>false</draft>
+        <id>carelink_index</id>
+        <internal>false</internal>
+        <public>true</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-04-06 22:20:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b60bce79db15130096b17d8bbf9619d2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>carelink_index</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_page_b60bce79db15130096b17d8bbf9619d2</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-04-16 16:19:16</sys_updated_on>
+        <title>Carelink</title>
+    </sp_page>
+</record_update>

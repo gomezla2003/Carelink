@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>wrench</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>0</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Update your provider list for your existing CareLink Account</short_description>
+        <size>md</size>
+        <sp_column display_value="3">cbd4dc45dbe15f0096b17d8bbf9619cc</sp_column>
+        <sp_page display_value="carelink_update">a3c934116f68df8061f06ea22e3ee433</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-04-06 22:22:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6f7b42b1db55130096b17d8bbf961966</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Update my CareLink Account</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_instance_link_6f7b42b1db55130096b17d8bbf961966</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-04-16 16:04:27</sys_updated_on>
+        <title>Update my CareLink Account</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="sam_user" name="sam_user">9c83672967222200e85a87cb5685efa6</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-02-10 01:06:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>09f756bb6f4c9b40277218d22e3ee42b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9c83672967222200e85a87cb5685efa6</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sys_embedded_help_role_09f756bb6f4c9b40277218d22e3ee42b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-02-10 01:06:07</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

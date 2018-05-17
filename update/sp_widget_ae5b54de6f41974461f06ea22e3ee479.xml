@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function carelink($scope) {  
+  var c = this;  
+	
+	
+$scope.submit = function(){
+	
+	if((!c.data.first_name)||(!c.data.last_name)||(!c.data.dob)||(!c.data.practice)){
+	swal("Incomplete Form","Please finish the form before submitting",'error');
+		return;
+	}
+	else{
+		
+		
+			
+	swal("Thank you", "Your request for deactivation has been submitted","success").then(function () {
+		var url = 'https://www.honorhealth.com/';
+
+	top.window.location = url;					
+		c.server.update();
+
+	});
+
+}
+}}
+
+		
+	
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,glyph,class_name,type,sc_category,url,kb_article,kb_topic,kb_category,sc_cat_item,sp_page,color</field_list>
+        <has_preview>false</has_preview>
+        <id>carelink_deactivate</id>
+        <internal>false</internal>
+        <link/>
+        <name>CareLink deactivate</name>
+        <option_schema>[{"name":"link_template","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  
+	
+	if(input){
+	
+			createRequest();
+
+	}
+	
+	
+})();  
+
+function createRequest(user){
+	gs.include('Cart');
+	var cartId = gs.generateGUID()	
+	var cart = new global.Cart(cartId);
+	var item = cart.addItem('26cf9c966f81974461f06ea22e3ee4d9',1);
+	
+	
+	
+	cart.setVariable(item, 'first_name', input.first_name);
+	cart.setVariable(item, 'last_name', input.last_name);
+	cart.setVariable(item, 'dob', input.dob);
+	cart.setVariable(item, 'practice_name', input.practice);
+	var req = cart.placeOrder();
+}
+
+
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-26 17:13:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ae5b54de6f41974461f06ea22e3ee479</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>CareLink deactivate</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_widget_ae5b54de6f41974461f06ea22e3ee479</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-05-17 17:07:56</sys_updated_on>
+        <template><![CDATA[
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>CareLink User Deactivation</legend>
+  <h4>
+    Please enter the information assoicated with the account to be De-Activated.  <br />
+  </h4>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">First Name</label>  
+  <div class="col-md-5">
+  <input id="text" ng-model="data.first_name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+  
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Last Name</label>  
+  <div class="col-md-5">
+  <input id="text" ng-model="data.last_name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+  
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">DOB(MM/DD)</label>  
+  <div class="col-md-5">
+  <input id="text" ng-model="data.dob" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+  
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Practice Name</label>  
+  <div class="col-md-5">
+  <input id="text" ng-model="data.practice" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+ 
+  
+</fieldset>
+  
+
+    <br>
+  <div class="form-group">
+  <div class="col-md-4">
+<button id="singlebutton" class="btn btn-primary" ng-click="submit()">Submit</button>
+     </div>
+</div>
+  <br><br><br><br>
+</form>
+
+
+
+
+     
+]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Signature Translation" max_length="40" name="x_sthc_carelink_signature_translation" type="collection">
+        <element label="Signature" max_length="20000" name="signature" type="string"/>
+        <element label="User link" max_length="32" name="user_link" type="string"/>
+        <index name="index">
+            <element name="user_link"/>
+        </index>
+    </element>
+</database>

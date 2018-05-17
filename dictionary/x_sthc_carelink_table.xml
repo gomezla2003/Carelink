@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user" label="CareLink Table" max_length="40" name="x_sthc_carelink_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="CareLink Role" max_length="40" name="carelink_role" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Practice Manager Email" max_length="40" name="practice_manager_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Practice Manager Name" max_length="40" name="practice_manager_name" type="string"/>
+        <element label="Practice Providers" max_length="500" name="practice_providers" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reason for access" max_length="1000" name="reason_for_access" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Signature" max_length="10000" name="signature" type="user_image"/>
+        <element label="Sig_code" max_length="20000" name="sig_code" type="string"/>
+        <element label="User Agreement" max_length="1000" name="user_agreement" type="string"/>
+    </element>
+</database>

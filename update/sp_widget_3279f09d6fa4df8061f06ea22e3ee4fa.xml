@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function carelink($scope) {  
+  var c = this;  
+	
+	
+$scope.submit = function(){
+	
+	if((!c.data.email)){
+	swal("Incomplete Form","Please finish the form before submitting",'error');
+		return;
+	}
+	else{
+		
+		
+	c.server.update().then( function(){
+		setTimeout(function(){
+			
+	var pr = document.getElementById('providersOLD');
+autosize(pr);
+			var ta = document.getElementById('providers');
+autosize(ta);
+			
+			
+			if((c.data.providers)&&(c.data.check = 'true')){
+	swal("Thank you", "Your request has been submitted","success").then(function () {
+		var url = 'https://www.honorhealth.com/';
+//		alert(c.data.providers);
+	top.window.location = url;
+		c.server.update();																																		
+	});
+	}
+	else if (c.data.check == 'false'){
+swal("No Recent Account Found"," If this is your first time using this site, Please request a new account","error");
+		return;
+	}	
+		
+		},600);
+		
+	});
+	}
+}
+
+
+             
+
+
+
+
+}
+
+		
+	
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.text{
+  font-size:13px;
+  width:80%;
+}</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,glyph,class_name,type,sc_category,url,kb_article,kb_topic,kb_category,sc_cat_item,sp_page,color</field_list>
+        <has_preview>false</has_preview>
+        <id>carelink_request_update</id>
+        <internal>false</internal>
+        <link/>
+        <name>CareLink Request Update</name>
+        <option_schema>[{"name":"link_template","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  
+	
+	if(input){
+	
+			data.check='false';
+		
+		var providers;
+var user = new GlideRecord('x_sthc_carelink_table');
+		user.addQuery('email',input.email);
+		user.query();
+		while(user.next()){
+			providers = user.practice_providers + '';
+			data.check = 'true';
+			data.providersOLD = user.practice_providers + '';
+		
+			
+			
+			if(input.providers){
+				
+				user.practice_providers = input.providers;
+				user.update();
+				createRequest(user.sys_id,providers);
+			}
+			
+			
+			
+		}
+		
+ 
+	}
+	
+	
+})();  
+
+function createRequest(user,providers){
+	gs.include('Cart');
+	var cartId = gs.generateGUID()	
+	var cart = new global.Cart(cartId);
+	var item = cart.addItem('6911dae96fec13c061f06ea22e3ee4b6',1);
+	cart.setVariable(item, 'user',user);
+	cart.setVariable(item, 'providers',providers);
+	
+	var req = cart.placeOrder();
+}
+
+
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-02-26 20:19:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3279f09d6fa4df8061f06ea22e3ee4fa</sys_id>
+        <sys_mod_count>211</sys_mod_count>
+        <sys_name>CareLink Request Update</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_widget_3279f09d6fa4df8061f06ea22e3ee4fa</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-05-17 16:52:43</sys_updated_on>
+        <template><![CDATA[
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>CareLink Provider Group Update Request</legend>
+ <div class='text'>
+   
+  
+  <h3>
+  <li> If you already have CareLink access and your carelink email is not found, Please use our new account form  <a href="https://shcdev.service-now.com/csm?id=carelink">here.</a><br /><br /> 
+  <li>  If you already have an account and need to update the list of providers, please provide your email below.
+  </h3><br />
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-5">
+  <input id="email" ng-model="data.email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+
+  <div ng-if ='data.providersOLD'>
+  
+<div class="form-group" >
+  <label class="col-md-4 control-label" for="providers">Previous list of Practice Providers</label>
+  <div class="col-md-4" >                     
+    <textarea class="form-control"  rows="4" id="providersOLD" ng-model="data.providersOLD" disabled></textarea>
+  </div>
+</div>
+  
+  
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="providers">Updated list of Providers</label>
+  <div class="col-md-4">              
+    <textarea class="form-control" rows="4" id="providers" ng-model="data.providers"></textarea>
+    </div>
+</div>
+</div>
+  
+</fieldset>
+  
+
+    <br>
+  <div class="form-group">
+  <div class="col-md-4">
+<button id="singlebutton" class="btn btn-primary" ng-click="submit()">Update Account</button>
+     </div>
+</div>
+  <br><br><br><br>
+</form>
+
+
+
+
+     
+]]></template>
+    </sp_widget>
+</record_update>

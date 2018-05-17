@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user" label="Care Link Approvals" max_length="40" name="x_sthc_carelink_care_link_approvals" type="collection">
+        <element choice="1" default="1" label="Approval Status" max_length="40" name="approval_status" type="string">
+            <choice>
+                <element label="Approved" value="3"/>
+                <element label="Cancelled" value="2"/>
+                <element label="Pending" value="1"/>
+                <element label="Rejected" value="4"/>
+            </choice>
+        </element>
+        <element label="Approving" max_length="32" name="approving" reference="x_sthc_carelink_table" type="reference"/>
+        <element label="Practice Address" max_length="40" name="practice_address" type="string"/>
+        <element label="Practice Name" max_length="40" name="practice_name" type="string"/>
+        <element label="Signature" max_length="20000" name="signature" type="user_image"/>
+        <element label="Sig code" max_length="20000" name="sig_code" type="string"/>
+        <element label="User Agreement" max_length="1000" name="user_agreement" type="string"/>
+        <index name="index">
+            <element name="approving"/>
+        </index>
+    </element>
+</database>

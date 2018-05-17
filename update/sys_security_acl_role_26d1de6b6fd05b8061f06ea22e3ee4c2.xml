@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-02-21 16:16:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>26d1de6b6fd05b8061f06ea22e3ee4c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sthc_carelink_signature_translation.x_sthc_carelink.user</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_security_acl display_value="x_sthc_carelink_signature_translation">26d1de6b6fd05b8061f06ea22e3ee497</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_26d1de6b6fd05b8061f06ea22e3ee4c2</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-02-21 16:16:40</sys_updated_on>
+        <sys_user_role display_value="x_sthc_carelink.user" name="x_sthc_carelink.user">025d9b4f6f0cd740277218d22e3ee472</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
