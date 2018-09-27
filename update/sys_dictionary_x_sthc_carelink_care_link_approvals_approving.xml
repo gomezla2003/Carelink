@@ -53,7 +53,7 @@
         <sys_created_by>LGOMEZ</sys_created_by>
         <sys_created_on>2018-04-02 16:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>58fe80e86f15df44277218d22e3ee4b8</sys_id>
+        <sys_id>f062d83ddbe6934096b17d8bbf96196a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Approving</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>sys_dictionary_x_sthc_carelink_care_link_approvals_approving</sys_update_name>
-        <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2018-04-02 16:12:12</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-06-07 16:51:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
