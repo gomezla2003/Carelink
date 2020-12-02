@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sc_req_item" version="2" view="RPT457f894fdbc2d308808f68461b9619d8">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>request.requested_for.name</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>8d7f894fdbc2d308808f68461b9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>variables.b088e6a56f6053c061f06ea22e3ee476</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>017f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>817f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>request</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>057f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>variables.53982aa56f6053c061f06ea22e3ee4a1</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>857f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>097f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>closed_at</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>897f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>variables.7738a6a16f6053c061f06ea22e3ee46d</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>0d7f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>variables.ed58a2616f6053c061f06ea22e3ee49c</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="8d7f894fdbc2d308808f68461b9619dd">097f894fdbc2d308808f68461b9619de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_id>8d7f894fdbc2d308808f68461b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sc_req_item</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-05-17 21:59:29</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>097f894fdbc2d308808f68461b9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sc_req_item</sys_name>
+            <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+            <sys_update_name>sys_ui_list_sc_req_item_RPT457f894fdbc2d308808f68461b9619d8</sys_update_name>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-05-17 21:59:29</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt457f894fdbc2d308808f68461b9619d8" name="RPT457f894fdbc2d308808f68461b9619d8">8d7f894fdbc2d308808f68461b9619dd</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
