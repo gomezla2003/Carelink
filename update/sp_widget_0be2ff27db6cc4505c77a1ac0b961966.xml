@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {  
+  var c = this;  
+	
+$scope.check = function(){
+	c.data.check = 'true';
+	c.server.update();
+	
+	setTimeout(function(){
+	if(c.data.result == false){		
+		
+		swal({
+  title: 'No Exisiting Account Found',
+  type: 'error',
+  html:
+    'Please verify email address or click , ' +
+    '<a href="https://shc.service-now.com/csm?id=carelink">here</a> ' +
+    'to create an account',
+  showCloseButton: true,
+  showCancelButton: false,
+  focusConfirm: false,
+  confirmButtonText:
+    'Close',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+		
+		
+	}
+	},900);
+	
+}
+
+$scope.submit = function(){
+	if(c.data.result == false){
+				swal("No Exisiting Account Found" , "No Account found under thie email. Please verify email address", "error");
+
+	}
+	else if(!c.data.src){
+	swal("Signature Error", "Please sign, and save your signature", "error");
+	}
+	else if ((!c.data.firstName)||(!c.data.lastName)||(!c.data.email)||(!c.data.manager_first)||(!c.data.manager_last)||(!c.data.manager_email)){
+		swal("Missing Information", "Please complete the form before submitting", "error");
+	}
+	else{
+		c.data.submit = 'true';
+		c.server.update();
+	swal("Thank you", "Your request has been submitted.","success").then(function () {
+		var url = 'https://www.honorhealth.com/';
+	top.window.location = url;
+		
+	});
+	}
+}
+}
+		
+		//your approver/manager will need to approve within 7 business days or your request will be cancelled. 
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.center {
+    display: block;
+  float: left;
+    width: 30%;
+  padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 80px;
+}
+.text{
+  display: block;
+
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          .container {
+            border: 1px solid red;
+            padding: 10px 10px 40px 10px;
+            position: relative;
+            margin: 0 auto 0 auto;
+            height: 100%;
+          }
+
+          .container .signature {
+            border: 1px solid orange;
+            margin: 0 auto;
+            cursor: pointer;
+          }
+
+          .container .signature canvas {
+            border: 1px solid #999;
+            margin: 0 auto;
+            cursor: pointer;
+          }
+
+          .container .buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+          }
+
+          .container .sizes {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+          }
+
+          .container .sizes input {
+            width: 4em;
+            text-align: center;
+          }
+
+          .result {
+            border: 1px solid blue;
+            margin: 30px auto 0 auto;
+            height: 220px;
+            width: 568px;
+          }
+        
+
+.container {
+  padding-top: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+  margin: 20px;
+  vertical-align: middle;
+  
+}
+
+.icon-success {
+    color: #5CB85C;
+}
+</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,glyph,class_name,type,sc_category,url,kb_article,kb_topic,kb_category,sc_cat_item,sp_page,color</field_list>
+        <has_preview>true</has_preview>
+        <id>carelink_renew</id>
+        <internal>false</internal>
+        <link/>
+        <name>CareLink Renew</name>
+        <option_schema>[{"name":"link_template","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  
+	
+	
+	if(input){
+		if(input.check == 'true'){
+			data.result = checkUser();
+			
+		}
+		if(input.submit == 'true'){
+	var img = input.src;
+	var final_img = img.substr(22);
+		
+		var mgr = new GlideRecord('x_sthc_carelink_care_link_approvals');
+		mgr.initialize();
+		//mgr.active = false;
+		mgr.first_name = input.manager_first;
+		mgr.last_name = input.manager_last;
+		mgr.email = input.manager_email;
+		mgr.setValue('u_customer_type','carelinkApprover');
+		var manager_sysID = mgr.insert();
+
+	
+		
+var user = new GlideRecord('x_sthc_carelink_table');
+		user.initialize();
+		//user.active = false;
+		user.first_name = input.firstName;
+		user.last_name = input.lastName;
+		user.mobile_phone = input.phone;
+		user.email = input.email
+		user.u_date_of_birth__mm_dd_ = input.dob;
+		user.location = input.location;
+		user.carelink_role = input.role;
+		user.practice_providers = input.providers;
+    user.setValue('manager',manager_sysID);
+		user.u_security_question = input.securityQuestion;
+		user.u_answer = input.answer;
+		user.reason_for_access = input.reason;
+		user.title = '6d63bb2b6f585b8061f06ea22e3ee43a';
+		user.user_agreement = "I understand and acknowledge that:It is my legal and ethical responsibility as an authorized user to preserve and protect the privacy, confidentiality and security of all protected health information, proprietary and other confidential information relating to HonorHealth, its patients, activities, affiliates, in accordance with law and HonorHealth policy. I agree to access, use or disclose confidential information only in the performance of my HonorHealth duties, when required or permitted by law, and to disclose information only to persons who have the right to receive that information. When using or disclosing protected health information or confidential information, I will use or disclose only the minimum information necessary. I agree to discuss confidential information only in my workplace and for HonorHealth -related purposes. I will not knowingly discuss any confidential information within the hearing of other persons who do not have the right to receive the information. I agree to protect the confidentiality of any protected health information, proprietary or other confidential information which is disclosed to me in the course of my relationship with HonorHealth. I hereby agree, as a condition of continued access to HonorHealth's computer systems, to abide by the policies and procedures described in HonorHealth's policies. I understand that access to HonorHealth's computer systems is a privilege and monitored, and which may be revoked at any time at the sole discretion of HonorHealth. I understand that it is my responsibility to follow safe computing guidelines. To this end, I agree not to share my Login or User ID and/or password with anyone, or use the Login or User ID of any other user, and that any access to HonorHealth electronic information made using my Login or User ID and password is my responsibility. If I believe that someone else has used my Login or User ID and password, or if I know of any violation of HonorHealth policy, I will immediately report the use to the appropriate Information Systems Department or the HonorHealth Corporate Compliance Department and request a new password.";
+		user.u_customer_type = 'carelink';
+		
+		//user.signature = final_img;
+		var sysID = user.insert();
+		createRequest(user.sys_id);
+
+		
+		
+	
+	var sig = new GlideRecord('x_sthc_carelink_signature_translation');
+	sig.initialize();
+	sig.user_link = sysID;
+	sig.signature = final_img;
+	sig.insert();
+		
+		//var sam = new GlideRecord('alm_entitlement_user');
+	//	sam.initialize();
+		//sam.assigned_to = sysID.sys_id;
+		//sam.licensed_by = 'e2ac5b8b6f0cd740277218d22e3ee48b';
+		//sam.insert();
+		input.submit = 'false';
+		data.submit = 'false';
+			data.result = '';
+			input.result = '';
+		}	
+ 
+	}
+	
+	
+})();  
+
+
+
+function createRequest(userID){
+	gs.include('Cart');
+	var cartId = gs.generateGUID()	
+	var cart = new global.Cart(cartId);
+	var item = cart.addItem('12d0fbafdbe8c4505c77a1ac0b9619a4',1);
+	cart.setVariable(item, 'first_name',input.firstName);
+	cart.setVariable(item, 'last_name',input.lastName);
+  cart.setVariable(item, 'email',input.email);
+	
+	var req = cart.placeOrder();
+}
+
+
+function checkUser(){
+gs.addInfoMessage("Checking for account");
+	var gr = new GlideRecord('x_sthc_carelink_table');
+	gr.addQuery('email',input.email);
+	gr.query();
+	if(gr.next()){
+		return true;
+	}
+	else
+		return false;
+	input.check = 'false';
+	data.check = 'false';
+	
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2019-10-23 22:09:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0be2ff27db6cc4505c77a1ac0b961966</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>CareLink Renew</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_widget_0be2ff27db6cc4505c77a1ac0b961966</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:24:02</sys_updated_on>
+        <template><![CDATA[
+<form class="form-horizontal">
+<fieldset>
+  
+  <div>
+    <h1>CareLink Renew Access Request</h1>
+    <img src="Carelink.png" class="center">
+    <span class="text">
+  CareLink is a web-based, read-only version of Connect for our community affiliates. Community affiliates may include community providers and their office staff, utilization reviewers, payors, auditors, and research data monitors.<br />
+<b>Please note:</b> If there is no response from your approver/manager within 7 business days, your request will be cancelled and you will have to submit a new request.<br />
+    <br /></span>
+  </div>
+  
+
+<!-- Form Name -->
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="firstName">First Name</label>  
+  <div class="col-md-5">
+  <input id="firstName" ng-model="data.firstName" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lastName">Last Name</label>  
+  <div class="col-md-5">
+  <input id="lastName" ng-model="data.lastName" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-5">
+  <input ng-change="check()" ng-model-options="{debounce:2000}" id="email" ng-model="data.email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+
+
+  
+ <!-- Textarea -->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="practice_manager">Approver/Manager</label>
+  <div class="col-md-5">  
+    <span class="form-inline">
+      
+    <input  class="form-control" placeholder="First Name" id="manager_first" ng-model="data.manager_first">
+    <input  class="form-control" placeholder="Last Name" id="manager_last" ng-model="data.manager_last">
+    </span>
+    </div>
+  </div>
+  
+  
+   <!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="practice_manager">Approver/Manager Email</label>
+  <div class="col-md-5">                     
+    <input type="email" class="form-control" id="manager_email" ng-model="data.manager_email">
+  </div> 
+  </div>
+      
+  
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="role">Role</label>
+  <div class="col-md-5">
+    <select id="role" ng-model="data.role" class="form-control" required="">
+      <option value="Utilization Reviewer">Utilization Reviewer</option>
+      <option value="Payor">Payor</option>
+      <option value="Billing">Billing</option>
+      <option value="Auditor">Auditor</option>
+      <option value="Research Data Monitor">Research Data Monitor</option>
+      <option value="Community Provider">Community Provider</option>
+      <option value="Community Provider Office Staff">Community Provider Office Staff-</option>
+    </select>
+  </div>
+</div>
+  
+  
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Practice or Affiliation</label>  
+  <div class="col-md-5">
+  <input id="email" ng-model="data.practice" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+  
+  
+    <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Providers</label>  
+  <div class="col-md-5">
+    <textarea id="providers" ng-model="data.providers" type="textarea" placeholder="" class="form-control input-md" required=""></textarea>
+    
+  </div>
+</div>
+  
+  
+  
+</fieldset>
+  
+  
+  <div class="form-group">
+        <label class="col-xs-3 control-label">Terms of use</label>
+        <div class="col-xs-9">
+            
+          <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=638 valign=top style='width:6.65in;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#D3C0D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif'>CONFIDENTIALITY
+  STATEMENT and<span style='mso-spacerun:yes'>  </span>COMPUTER SYSTEMS
+  ACCEPTABLE USAGE AGREEMENT<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+          
+          <div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
+             <p class=Default><span style='font-size:10.0pt'>I understand and acknowledge
+that:<o:p></o:p></span></p>
+
+
+<p class=Default><span style='font-size:10.0pt'>It is my legal and ethical
+responsibility as an authorized user to preserve and protect the privacy,
+confidentiality and security of all protected health information, proprietary
+and other confidential information relating to HonorHealth, its patients, activities,
+affiliates, in accordance with law and HonorHealth policy.<o:p></o:p></span></p>
+
+<p class=Default><span style='font-size:10.0pt'>I agree to access, use or
+disclose confidential information only in the performance of my HonorHealth duties,
+when required or permitted by law, and to disclose information only to persons
+who have the right to receive that information. When using or disclosing
+protected health information or confidential information, I will use or
+disclose only the minimum information necessary.<o:p></o:p></span></p>
+
+
+
+<p class=Default><span style='font-size:10.0pt'>I agree to discuss confidential
+information only in my workplace and for HonorHealth -related purposes. I will
+not knowingly discuss any confidential information within the hearing of other
+persons who do not have the right to receive the information. I agree to
+protect the confidentiality of any protected health information, proprietary or
+other confidential information which is disclosed to me in the course of my
+relationship with HonorHealth.<o:p></o:p></span></p>
+
+
+
+<p class=Default><span style='font-size:10.0pt'>I hereby agree, as a condition
+of continued access to HonorHealth’s computer systems, to abide by the policies
+and procedures described in HonorHealth’s policies. I understand that access to
+HonorHealth’s computer systems is a privilege and monitored, and which may be
+revoked at any time at the sole discretion of HonorHealth.<o:p></o:p></span></p>
+
+
+
+<p class=Default><span style='font-size:10.0pt'>I understand that it is my
+responsibility to follow safe computing guidelines. To this end, I agree not to
+share my Login or User ID and/or password with anyone, or use the Login or User
+ID of any other user, and that any access to HonorHealth electronic information
+made using my Login or User ID and password is my responsibility. If I believe
+that someone else has used my Login or User ID and password, or if I know of
+any violation of HonorHealth policy, I will immediately report the use to the
+appropriate Information Systems Department or the HonorHealth Corporate
+Compliance Department and request a new password.<o:p></o:p></span></p>
+
+            </div></div></div>
+          
+          
+   <div class="container" ng-style="{'max-width': boundingBox.width + 'px', 'max-height': boundingBox.height + 'px'}">
+     <label style="text-align: center;">
+       By signing below, I hereby acknowledge that I have completely read and fully understand the
+HonorHealth Confidentiality Statement and Computer Systems Acceptable Usage Agreement.
+     </label>       
+     <signature-pad accept="accept" clear="clear" height="220" width="500" dataurl="dataurl"></signature-pad>
+
+            <div class="buttons">
+                <button ng-click="clear(); data.src = NULL">Clear Signature</button>
+               
+                <button ng-click="signature = accept(); data.src = signature.dataUrl">Save Signature</button>
+   
+            <span ng-if="data.src" >
+             Signature Saved <span class="glyphicon glyphicon-ok icon-success"></span>
+              </span>          
+   </div>
+   </div>
+  
+  
+    <br>
+  <div class="form-group">
+  <div class="col-md-4">
+<button id="singlebutton" class="btn btn-primary" ng-click="submit(); data.src = signature.dataUrl">Submit</button>
+     </div>
+</div>
+  <br><br><br><br>
+</form>
+
+
+
+
+     
+]]></template>
+    </sp_widget>
+</record_update>

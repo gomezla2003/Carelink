@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_theme_css_include">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
     <m2m_sp_theme_css_include action="INSERT_OR_UPDATE">
         <order>100</order>
         <sp_css_include display_value="customer-service-styles.css">7e2f1ed3cb13020000f8d856634c9c03</sp_css_include>

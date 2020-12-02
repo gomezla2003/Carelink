@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element extends="sys_user" label="CareLink Table" max_length="40" name="x_sthc_carelink_table" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_user" label="CareLink Table" max_length="40" name="x_sthc_carelink_table" sizeclass="5339" type="collection">
         <element attributes="edge_encryption_enabled=true" label="CareLink Role" max_length="40" name="carelink_role" type="string"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Practice Manager Email" max_length="40" name="practice_manager_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Practice Manager Name" max_length="40" name="practice_manager_name" type="string"/>
         <element label="Practice Providers" max_length="500" name="practice_providers" type="string"/>

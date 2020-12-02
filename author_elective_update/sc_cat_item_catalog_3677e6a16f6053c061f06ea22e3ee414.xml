@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="CareLink (New Account)">aa4766616f6053c061f06ea22e3ee4e0</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-02-27 22:59:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3677e6a16f6053c061f06ea22e3ee414</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.CareLink (New Account)</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_3677e6a16f6053c061f06ea22e3ee414</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-02-27 22:59:01</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</application>
+        <comments/>
+        <file_path/>
+        <instance_id>25bc9655a91c5d0058ebf191520622b5</instance_id>
+        <instance_name>shc</instance_name>
+        <name>sc_cat_item_catalog_3677e6a16f6053c061f06ea22e3ee414</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="CareLink (New Account)">aa4766616f6053c061f06ea22e3ee4e0</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>LGOMEZ</sys_created_by><sys_created_on>2018-02-27 22:59:01</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3677e6a16f6053c061f06ea22e3ee414</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.CareLink (New Account)</sys_name><sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope><sys_update_name>sc_cat_item_catalog_3677e6a16f6053c061f06ea22e3ee414</sys_update_name><sys_updated_by>LGOMEZ</sys_updated_by><sys_updated_on>2018-02-27 22:59:01</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1714768239</payload_hash>
+        <record_name>Service Catalog.CareLink (New Account)</record_name>
+        <reverted_from/>
+        <source>90c29071db345b0874471cb51b9619dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-12 17:03:36</sys_created_on>
+        <sys_id>d7c290f5db345b0874471cb51b961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1621b2adced0000001</sys_recorded_at>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-12 17:03:36</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>b2772aa10f6053c0f604efca644a2afb</update_guid>
+        <update_guid_history>b2772aa10f6053c0f604efca644a2afb:-1714768239</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f6b5d875dbb45b0874471cb51b9619dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-12 17:16:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>0e0fbc9f1c344d878c993c7b0562ec61</sys_id>
+        <sys_metadata>3677e6a16f6053c061f06ea22e3ee414</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.CareLink (New Account)</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_parent display_value="CareLink (New Account)">aa4766616f6053c061f06ea22e3ee4e0</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_scope_delete display_value="">231c1d8d49394470aaceba78a1becc64</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_3677e6a16f6053c061f06ea22e3ee414</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_3677e6a16f6053c061f06ea22e3ee414">d7c290f5db345b0874471cb51b961983</sys_update_version>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-12 17:16:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

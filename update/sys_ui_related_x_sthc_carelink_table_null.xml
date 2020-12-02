@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_related sys_domain="global" table="x_sthc_carelink_table" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="CareLink Table - Default view" name="x_sthc_carelink_table" related_list="NULL" sys_domain="global" view="Default view">369949e06f59df44277218d22e3ee495</list_id>
+            <list_id display_value="CareLink Table - Default view" name="x_sthc_carelink_table" related_list="NULL" sys_domain="global" view="Default view">f08cf328dbcd53c874471cb51b9619fd</list_id>
             <order_by/>
             <position>0</position>
             <related_list>incident.caller_id</related_list>
@@ -17,7 +16,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="CareLink Table - Default view" name="x_sthc_carelink_table" related_list="NULL" sys_domain="global" view="Default view">369949e06f59df44277218d22e3ee495</list_id>
+            <list_id display_value="CareLink Table - Default view" name="x_sthc_carelink_table" related_list="NULL" sys_domain="global" view="Default view">f08cf328dbcd53c874471cb51b9619fd</list_id>
             <order_by/>
             <position>1</position>
             <related_list>sc_request.requested_for</related_list>
@@ -31,7 +30,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="CareLink Table - Default view" name="x_sthc_carelink_table" related_list="NULL" sys_domain="global" view="Default view">369949e06f59df44277218d22e3ee495</list_id>
+            <list_id display_value="CareLink Table - Default view" name="x_sthc_carelink_table" related_list="NULL" sys_domain="global" view="Default view">f08cf328dbcd53c874471cb51b9619fd</list_id>
             <order_by/>
             <position>2</position>
             <related_list>x_sthc_carelink_care_link_approvals.approving</related_list>
@@ -55,7 +54,7 @@
             <sys_created_on>2018-04-02 20:22:02</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>369949e06f59df44277218d22e3ee495</sys_id>
+            <sys_id>f08cf328dbcd53c874471cb51b9619fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>CareLink Table - Default view</sys_name>
             <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>

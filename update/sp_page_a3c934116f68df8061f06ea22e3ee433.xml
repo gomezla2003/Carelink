@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
         <css/>
         <draft>false</draft>
+        <dynamic_title_structure/>
         <id>carelink_update</id>
         <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
         <public>true</public>
         <roles>admin</roles>
+        <seo_script/>
         <short_description/>
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>LGOMEZ</sys_created_by>
@@ -23,5 +26,7 @@
         <sys_updated_by>LGOMEZ</sys_updated_by>
         <sys_updated_on>2018-04-16 16:42:57</sys_updated_on>
         <title>CareLink update</title>
+        <use_seo_script>false</use_seo_script>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=a3c934116f68df8061f06ea22e3ee433"/>
 </record_update>

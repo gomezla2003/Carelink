@@ -1,45 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_form_sections form_id="e793cc1b6fcd9b4461f06ea22e3ee40e" sys_domain="global" table="x_sthc_carelink_care_link_approvals" version="3">
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>0</position>
-            <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-03-29 18:03:51</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>6f93cc1b6fcd9b4461f06ea22e3ee43c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_sthc_carelink_care_link_approvals" name="x_sthc_carelink_care_link_approvals" sys_domain="global" view="f05069011b320100e90d928f3d071326">e793cc1b6fcd9b4461f06ea22e3ee40e</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_care_link_approvals" sys_domain="global" view="f05069011b320100e90d928f3d071326">eb93cc1b6fcd9b4461f06ea22e3ee43a</sys_ui_section>
-            <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-03-29 18:03:51</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-03-29 18:03:51</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>e793cc1b6fcd9b4461f06ea22e3ee43a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_sthc_carelink_care_link_approvals" name="x_sthc_carelink_care_link_approvals" sys_domain="global" view="f05069011b320100e90d928f3d071326">e793cc1b6fcd9b4461f06ea22e3ee40e</sys_ui_form>
-            <sys_ui_section caption="Job role" display_value="Job role" name="x_sthc_carelink_care_link_approvals" sys_domain="global" view="f05069011b320100e90d928f3d071326">6b93cc1b6fcd9b4461f06ea22e3ee413</sys_ui_section>
-            <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-03-29 18:03:51</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-03-29 18:03:51</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>6793cc1b6fcd9b4461f06ea22e3ee413</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_sthc_carelink_care_link_approvals" name="x_sthc_carelink_care_link_approvals" sys_domain="global" view="f05069011b320100e90d928f3d071326">e793cc1b6fcd9b4461f06ea22e3ee40e</sys_ui_form>
-            <sys_ui_section caption="Contact details" display_value="Contact details" name="x_sthc_carelink_care_link_approvals" sys_domain="global" view="f05069011b320100e90d928f3d071326">af93cc1b6fcd9b4461f06ea22e3ee410</sys_ui_section>
-            <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-03-29 18:03:51</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_sthc_carelink_care_link_approvals</name>
             <roles/>

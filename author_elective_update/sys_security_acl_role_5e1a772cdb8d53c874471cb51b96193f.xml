@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-21 22:57:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5e1a772cdb8d53c874471cb51b96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.itil</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_security_acl display_value="">d61a772cdb8d53c874471cb51b96193f</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5e1a772cdb8d53c874471cb51b96193f</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-21 22:57:27</sys_updated_on>
+        <sys_user_role display_value="itil" name="itil">37cf9a916f10110061f09ea22e3ee461</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</application>
+        <comments/>
+        <file_path/>
+        <instance_id>25bc9655a91c5d0058ebf191520622b5</instance_id>
+        <instance_name>shc</instance_name>
+        <name>sys_security_acl_role_5e1a772cdb8d53c874471cb51b96193f</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>LGOMEZ</sys_created_by><sys_created_on>2018-03-21 22:57:27</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5e1a772cdb8d53c874471cb51b96193f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.itil</sys_name><sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope><sys_security_acl display_value="">d61a772cdb8d53c874471cb51b96193f</sys_security_acl><sys_update_name>sys_security_acl_role_5e1a772cdb8d53c874471cb51b96193f</sys_update_name><sys_updated_by>LGOMEZ</sys_updated_by><sys_updated_on>2018-03-21 22:57:27</sys_updated_on><sys_user_role display_value="itil" name="itil">37cf9a916f10110061f09ea22e3ee461</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1903357966</payload_hash>
+        <record_name>.itil</record_name>
+        <reverted_from/>
+        <source>994498b9db745b0874471cb51b96197f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-21 22:57:27</sys_created_on>
+        <sys_id>521a772cdb8d53c874471cb51b961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1624ac80c6e0000001</sys_recorded_at>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-21 22:57:27</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>5a1a772cc68d53c8fce788d12cbd6141</update_guid>
+        <update_guid_history>5a1a772cc68d53c8fce788d12cbd6141:-1903357966</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">a8abf324dbcd53c874471cb51b961954</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-21 23:04:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>96d77979813546e098451e098eb2e840</sys_id>
+        <sys_metadata>5e1a772cdb8d53c874471cb51b96193f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.itil</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_scope_delete display_value="">231c1d8d49394470aaceba78a1becc64</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_5e1a772cdb8d53c874471cb51b96193f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_5e1a772cdb8d53c874471cb51b96193f">521a772cdb8d53c874471cb51b961942</sys_update_version>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-21 23:04:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

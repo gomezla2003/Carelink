@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element extends="sys_user" label="Care Link Approvals" max_length="40" name="x_sthc_carelink_care_link_approvals" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_user" label="Care Link Approvals" max_length="40" name="x_sthc_carelink_care_link_approvals" sizeclass="5333" type="collection">
         <element choice="1" default="1" label="Approval Status" max_length="40" name="approval_status" type="string">
             <choice>
-                <element label="Approved" value="3"/>
-                <element label="Cancelled" value="2"/>
-                <element label="Pending" value="1"/>
-                <element label="Rejected" value="4"/>
+                <element inactive_on_update="false" label="Approved" value="3"/>
+                <element inactive_on_update="false" label="Cancelled" value="2"/>
+                <element inactive_on_update="false" label="Pending" value="1"/>
+                <element inactive_on_update="false" label="Rejected" value="4"/>
             </choice>
         </element>
         <element label="Approving" max_length="32" name="approving" reference="x_sthc_carelink_table" type="reference"/>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
         <client_script><![CDATA[function carelink($scope) {  
   var c = this;  
 	
@@ -32,7 +32,7 @@ autosize(ta);
 	});
 	}
 	else if (c.data.check == 'false'){
-swal("No Recent Account Found"," If this is your first time using this site, Please request a new account","error");
+swal("No Recent Account Found","Please request a new account","error");
 		return;
 	}	
 		
@@ -54,10 +54,7 @@ swal("No Recent Account Found"," If this is your first time using this site, Ple
 	
 ]]></client_script>
         <controller_as>c</controller_as>
-        <css>.text{
-  font-size:13px;
-  width:80%;
-}</css>
+        <css/>
         <data_table>sp_instance_link</data_table>
         <demo_data/>
         <description/>
@@ -93,6 +90,8 @@ var user = new GlideRecord('x_sthc_carelink_table');
 				user.practice_providers = input.providers;
 				user.update();
 				createRequest(user.sys_id,providers);
+				input.providers = '';
+				data.providers = '';
 			}
 			
 			
@@ -125,7 +124,7 @@ function createRequest(user,providers){
         <sys_created_on>2018-02-26 20:19:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3279f09d6fa4df8061f06ea22e3ee4fa</sys_id>
-        <sys_mod_count>211</sys_mod_count>
+        <sys_mod_count>199</sys_mod_count>
         <sys_name>CareLink Request Update</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
         <sys_policy/>
@@ -133,21 +132,18 @@ function createRequest(user,providers){
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>sp_widget_3279f09d6fa4df8061f06ea22e3ee4fa</sys_update_name>
         <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2018-05-17 16:52:43</sys_updated_on>
+        <sys_updated_on>2020-09-08 15:04:26</sys_updated_on>
         <template><![CDATA[
 <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
 <legend>CareLink Provider Group Update Request</legend>
- <div class='text'>
-   
-  
-  <h3>
-  <li> If you already have CareLink access and your carelink email is not found, Please use our new account form  <a href="https://shcdev.service-now.com/csm?id=carelink">here.</a><br /><br /> 
-  <li>  If you already have an account and need to update the list of providers, please provide your email below.
-  </h3><br />
-</div>
+  <h4>
+    
+    If you already have an account and need to update the list of providers, please fill out the form below. <br /> If you need to request a new account, please click <a href="/csm?id=carelink">here.</a>
+  </h4>
+
 
 <!-- Text input-->
 <div class="form-group">

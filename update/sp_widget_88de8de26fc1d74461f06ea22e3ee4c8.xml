@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
         <client_script><![CDATA[function($scope) {  
   var c = this;  
 	
@@ -223,16 +223,16 @@ body {
         <roles/>
         <script><![CDATA[(function() {  
 	
-	
 var CareLinkUser = gs.action.getGlideURI().get('script')
 var requestID = gs.action.getGlideURI().get('req')
 	var getUser = new x_sthc_carelink.Carelink();
 	
 	data.user = CareLinkUser;
+	//gs.addErrorMessage(data.user.toString());
 	data.userInfo = [];
 	data.userInfo = getUser.getUser(CareLinkUser);
 	data.approval_status = getUser.getApproval(requestID);
-	//gs.addErrorMessage(data.approval_status);
+	//gs.addErrorMessage(data.userInfo.toString());
 
 	
 	if(input){
@@ -251,22 +251,26 @@ var user = new GlideRecord('x_sthc_carelink_care_link_approvals');
 			user.update();
 			if (input.yes){	setApproval(sysID,requestID,'approved'); } 
 			if (input.no) { setApproval(sysID,requestID,'rejected'); }
+			
+				var sig = new GlideRecord('x_sthc_carelink_signature_translation');
+	sig.initialize();
+	sig.user_link = sysID;
+	sig.signature = final_img;
+	sig.insert();
+		
 	
 				
 		}
 
 
-	var sig = new GlideRecord('x_sthc_carelink_signature_translation');
-	sig.initialize();
-	sig.user_link = sysID;
-	sig.signature = final_img;
-	sig.insert();
+
 
  
 	}
 	
 	
-})();  
+})(); 
+
 
 
 function setApproval(user,id,state){
@@ -302,7 +306,7 @@ function createRequest(user){
         <sys_created_on>2018-03-27 15:36:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>88de8de26fc1d74461f06ea22e3ee4c8</sys_id>
-        <sys_mod_count>275</sys_mod_count>
+        <sys_mod_count>307</sys_mod_count>
         <sys_name>CareLink Validation</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
         <sys_policy/>
@@ -310,54 +314,40 @@ function createRequest(user){
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>sp_widget_88de8de26fc1d74461f06ea22e3ee4c8</sys_update_name>
         <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2018-04-16 15:50:57</sys_updated_on>
+        <sys_updated_on>2018-10-08 19:00:59</sys_updated_on>
         <template><![CDATA[<div ng-show="data.user == null && data.approval_status == 'requested'" >
   
   Invalid URL
 </div>
 
-<div ng-show="data.approval_status == requested" >
-  
-  Invalid URL
-</div>
-
-              
               
 <div ng-if="data.user">  
+  
 <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
 <legend>CareLink Access Request</legend>
-    
+
       <!-- Text input-->
- <span ng-repeat="CLuser in data.userInfo">
+ <div ng-repeat="CLuser in data.userInfo">
    
        <!-- Text input-->
    <div class="white">
         {{data.manager=CLuser.manager}}
    </div>
-   
-   <!--
-<div class="form-group">
-  <label class="col-md-4 control-label" for="location">User Requesting Access</label>  
-  <div class="col-md-5">
-  <input id="user" ng-model="CLuser.name" type="text" placeholder="" class="form-control input-md" required="" readonly>
-   
-  </div>
-   <div class="toggle-radio">
-     Approve?
-  <input ng-model="data.yes" id="yes" type="radio"  value="1" name="rdo"   >
-  <input ng-model="data.no"  id="no"  type="radio"  value="2" name="rdo" >
-  <div class="switch">
-    <label for="yes">Yes</label>
-    <label for="no">No</label>
-    <span></span>
-  </div>
-</div>
-</div>
--->
+
      <!-- Text input-->
+   <div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-5">
+  <input id="email" ng-model="CLuser.name" type="text" placeholder="" class="form-control input-md" readonly>
+    
+  </div>
+</div>
+
+   
+   
 <div class="form-group">
   <label class="col-md-4 control-label" for="email">Email</label>  
   <div class="col-md-5">
@@ -403,7 +393,7 @@ function createRequest(user){
    
 
   
-  </span>
+  </div>
   
   
   <!-- 

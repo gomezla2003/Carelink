@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_widget_dependency">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
     <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
         <sp_dependency display_value="SweetAlert2">d3ae2ed76f2b764061f06ea22e3ee49d</sp_dependency>
         <sp_widget display_value="CareLink Request Update">3279f09d6fa4df8061f06ea22e3ee4fa</sp_widget>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="CareLink Dashboard">3d67850cdb05978874471cb51b9619b5</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>048139626f13e100e59533d9ea3ee468</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-19 22:05:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>251b1d0cdb4d978874471cb51b961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>048139626f13e100e59533d9ea3ee468</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_251b1d0cdb4d978874471cb51b961991</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-19 22:05:45</sys_updated_on>
+        <type>3</type>
+        <user display_value="Dorian Parker">048139626f13e100e59533d9ea3ee468</user>
+        <write>false</write>
+    </pa_dashboards_permissions>
+</record_update>

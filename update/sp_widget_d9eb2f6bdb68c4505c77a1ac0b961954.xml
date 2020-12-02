@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {  
+  var c = this;  
+
+$scope.submit = function(){
+
+	if ((!c.data.name)||(!c.data.description)||(!c.data.issue)){
+		swal("Missing Information", "Please complete the form before submitting", "error");
+	}
+	else{
+		c.server.update();
+	swal("Thank you", "Your issue has been submitted.","success").then(function () {
+		var url = 'https://www.honorhealth.com/';
+	top.window.location = url;
+		
+	});
+	}
+}
+}
+		
+		//your approver/manager will need to approve within 7 business days or your request will be cancelled. 
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h1{
+ margin-left:auto;
+  margin-right:auto;
+}
+
+.center {
+    display: block;
+  float: left;
+    width: 30%;
+  padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 80px;
+}
+.text{
+  display: block;
+
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          .container {
+            border: 1px solid red;
+            padding: 10px 10px 40px 10px;
+            position: relative;
+            margin: 0 auto 0 auto;
+            height: 100%;
+          }
+
+          .container .signature {
+            border: 1px solid orange;
+            margin: 0 auto;
+            cursor: pointer;
+          }
+
+          .container .signature canvas {
+            border: 1px solid #999;
+            margin: 0 auto;
+            cursor: pointer;
+          }
+
+          .container .buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+          }
+
+          .container .sizes {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+          }
+
+          .container .sizes input {
+            width: 4em;
+            text-align: center;
+          }
+
+          .result {
+            border: 1px solid blue;
+            margin: 30px auto 0 auto;
+            height: 220px;
+            width: 568px;
+          }
+        
+
+.container {
+  padding-top: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+  margin: 20px;
+  vertical-align: middle;
+  
+}
+
+.icon-success {
+    color: #5CB85C;
+}
+</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,glyph,class_name,type,sc_category,url,kb_article,kb_topic,kb_category,sc_cat_item,sp_page,color</field_list>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>CareLink Issue</name>
+        <option_schema>[{"name":"link_template","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  
+	
+	
+	if(input){		
+ createINC();
+	}
+	
+	
+})();  
+
+function createINC(){
+		gs.include('Cart');
+	var cartId = gs.generateGUID()	
+	var cart = new global.Cart(cartId);
+	var item = cart.addItem('4e6a2b6fdb28c4505c77a1ac0b961922',1);
+	cart.setVariable(item, 'u_preferred_contact_name',input.name);
+	cart.setVariable(item, 'comments',input.issue);
+	cart.setVariable(item, 'short_description', input.description);
+	var req = cart.placeOrder();
+	
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2019-10-23 21:39:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d9eb2f6bdb68c4505c77a1ac0b961954</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>CareLink Issue</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_widget_d9eb2f6bdb68c4505c77a1ac0b961954</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2020-01-29 23:08:56</sys_updated_on>
+        <template><![CDATA[
+<form class="form-horizontal">
+<fieldset>
+  
+   <div>
+    <h1>Report a CareLink Issue</h1>
+    <img src="Carelink.png" class="center">
+    <span class="text">
+ <h3>
+   
+       Please provide detailed information of the issue you are experiencing in order for us to best assist you. For patient related issues please include the patient name, DOB, MRN, and date of encounter.<br />
+</h3>
+   <br />
+    <br /></span>
+  </div>
+  
+
+<!-- Form Name -->
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-5">
+  <input id="Name" ng-model="data.Name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+  
+  
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Contact Phone Number</label>  
+  <div class="col-md-5">
+  <input id="phone" ng-model="data.phone" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+  
+  
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Contact Email</label>  
+  <div class="col-md-5">
+  <input id="email" ng-model="data.email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="description">Short Description</label>  
+  <div class="col-md-5">
+  <input id="description" ng-model="data.description" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="issue">Description of issue</label>  
+  <div class="col-md-5">
+    <textarea id="issue" ng-model="data.issue" placeholder="" class="form-control input-md" required=""></textarea>
+    
+  </div>
+</div>
+
+  
+  
+</fieldset>
+  
+  
+  
+    <br>
+  <div class="form-group">
+  <div class="col-md-4">
+<button id="singlebutton" class="btn btn-primary" ng-click="submit(); data.src = signature.dataUrl">Submit</button>
+     </div>
+</div>
+  <br><br><br><br>
+</form>
+
+
+
+
+     
+]]></template>
+    </sp_widget>
+</record_update>

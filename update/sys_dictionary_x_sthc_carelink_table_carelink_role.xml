@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="carelink_role" table="x_sthc_carelink_table">
         <active>true</active>
         <array>false</array>
@@ -26,6 +25,8 @@
         <element>carelink_role</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -48,7 +49,7 @@
         <sys_created_by>LGOMEZ</sys_created_by>
         <sys_created_on>2018-02-21 18:33:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>2c62d83ddbe6934096b17d8bbf961943</sys_id>
+        <sys_id>f92176ab6f545b8061f06ea22e3ee405</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>CareLink Role</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
@@ -56,8 +57,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>sys_dictionary_x_sthc_carelink_table_carelink_role</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-06-07 16:51:48</sys_updated_on>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-02-21 18:33:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

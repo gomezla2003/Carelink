@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd hh:mm:ss</date_format>
+        <map display_value="Carelink Signature Translation">ea33deab6fd05b8061f06ea22e3ee475</map>
+        <reference_value_field/>
+        <source_field>signature</source_field>
+        <source_script>answer = (function transformEntry(source) {&#13;
+&#13;
+	// Add your code here&#13;
+	return ""; // return the value to be put into the target field&#13;
+&#13;
+})(source);</source_script>
+        <source_table>x_sthc_carelink_signature_translation</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-03-12 17:30:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d4e85831db385b0874471cb51b9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>signature</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sys_transform_entry_d4e85831db385b0874471cb51b9619d9</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-03-12 17:30:27</sys_updated_on>
+        <target_field>sig_code</target_field>
+        <target_table>x_sthc_carelink_table</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_header_footer">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
     <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
         <client_script><![CDATA[function ($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout) {
 	$scope.userID = $scope.user.sys_id;
 	if (cabrillo.isNative())
@@ -149,6 +149,7 @@ if (data.menu && data.menu.data) {
 data.loginWidget = $sp.getWidgetFromInstance('login-modal');
 data.typeahead = $sp.getWidgetFromInstance('typeahead-search');]]></script>
         <servicenow>false</servicenow>
+        <static>false</static>
         <sys_class_name>sp_header_footer</sys_class_name>
         <sys_created_by>LGOMEZ</sys_created_by>
         <sys_created_on>2018-04-16 16:26:51</sys_created_on>

@@ -1,37 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="pc_software_cat_item">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pc_software_cat_item">
     <pc_software_cat_item action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <access_type>restricted</access_type>
+        <active>false</active>
         <auto_created>true</auto_created>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <category/>
+        <category display_value="Other IT Services">2629d07c6f5cb10061f09ea22e3ee4be</category>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time/>
         <description/>
+        <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <features/>
+        <flow_designer_flow/>
         <group/>
+        <hide_sp>false</hide_sp>
         <icon/>
         <ignore_price>true</ignore_price>
         <image/>
         <list_price>0</list_price>
         <location/>
+        <mandatory_attachment>false</mandatory_attachment>
         <meta/>
         <mobile_hide_price>false</mobile_hide_price>
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model display_value="Epic - CareLink">a6c8d7876f0cd740277218d22e3ee437</model>
         <name>Epic - CareLink</name>
+        <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
         <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
         <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
@@ -41,8 +50,9 @@
         <product_id/>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
+        <request_method/>
         <roles>snc_internal</roles>
-        <sc_catalogs>5c8bb0106ffb6a0061f06ea22e3ee48d</sc_catalogs>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <short_description>Epic - CareLink</short_description>
@@ -62,7 +72,7 @@
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>pc_software_cat_item_1720e3036f4cd740277218d22e3ee4bc</sys_update_name>
         <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2018-04-17 15:57:24</sys_updated_on>
+        <sys_updated_on>2018-03-14 22:09:38</sys_updated_on>
         <template/>
         <type>item</type>
         <u_approval_group_override/>

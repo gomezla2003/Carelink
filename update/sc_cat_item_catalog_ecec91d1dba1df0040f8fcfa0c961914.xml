@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sc_cat_item_catalog">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Epic - CareLink">1720e3036f4cd740277218d22e3ee4bc</sc_cat_item>
         <sc_catalog display_value="Access Requests">5c8bb0106ffb6a0061f06ea22e3ee48d</sc_catalog>

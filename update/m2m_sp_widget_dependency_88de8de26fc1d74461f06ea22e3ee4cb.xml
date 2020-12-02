@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_widget_dependency">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
     <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
         <sp_dependency display_value="Angular Signature">475d2b696f54938061f06ea22e3ee46a</sp_dependency>
         <sp_widget display_value="CareLink Validation">88de8de26fc1d74461f06ea22e3ee4c8</sp_widget>

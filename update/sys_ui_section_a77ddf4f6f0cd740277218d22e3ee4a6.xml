@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="a77ddf4f6f0cd740277218d22e3ee4a6" sys_domain="global" table="x_sthc_carelink_table" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6b0ecafc6f5d1384277218d22e3ee41c</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>db296174dbb8e708ecd688915b961944</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -19,13 +18,13 @@
             <element>first_name</element>
             <position>1</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>ef0ecafc6f5d1384277218d22e3ee41c</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>d3296174dbb8e708ecd688915b961945</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +32,13 @@
             <element>middle_name</element>
             <position>2</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>630ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>57296174dbb8e708ecd688915b961945</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,321 +46,293 @@
             <element>last_name</element>
             <position>3</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>e30ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>d7296174dbb8e708ecd688915b961945</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>4</position>
+            <sys_created_by>LGOMEZ</sys_created_by>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>5b296174dbb8e708ecd688915b961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
+            <sys_updated_by>LGOMEZ</sys_updated_by>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>mobile_phone</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>670ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>db296174dbb8e708ecd688915b961945</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>email</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>e70ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>5f296174dbb8e708ecd688915b961945</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>practice_providers</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6b0ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>df296174dbb8e708ecd688915b961945</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>eb0ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>53296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_customer_type</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6f0ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>d3296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_date_of_birth__mm_dd_</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>ef0ecafc6f5d1384277218d22e3ee41d</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>57296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>location</element>
-            <position>10</position>
+            <element>u_practice_name</element>
+            <position>11</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>ef0ecafc6f5d1384277218d22e3ee4fd</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>d7296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>carelink_role</element>
-            <position>11</position>
-            <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>630ecafc6f5d1384277218d22e3ee4fe</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
-            <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>title</element>
             <position>12</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>e30ecafc6f5d1384277218d22e3ee4fe</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>5b296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>practice_manager_name</element>
-            <position>13</position>
-            <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>670ecafc6f5d1384277218d22e3ee4fe</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
-            <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>practice_manager_email</element>
-            <position>14</position>
-            <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>e70ecafc6f5d1384277218d22e3ee4fe</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
-            <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>manager</element>
-            <position>15</position>
+            <position>13</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6b0ecafc6f5d1384277218d22e3ee4fe</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>db296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_security_question</element>
-            <position>16</position>
+            <position>14</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>eb0ecafc6f5d1384277218d22e3ee4fe</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>5f296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_answer</element>
-            <position>17</position>
+            <position>15</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6f0ecafc6f5d1384277218d22e3ee4fe</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>df296174dbb8e708ecd688915b961946</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>18</position>
+            <position>16</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>ef0ecafc6f5d1384277218d22e3ee4fe</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>53296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>reason_for_access</element>
-            <position>19</position>
+            <position>17</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>630ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>d3296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>user_agreement</element>
-            <position>20</position>
+            <position>18</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>e30ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>57296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
-            <position>21</position>
+            <position>19</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>670ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>d7296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>signature</element>
-            <position>22</position>
+            <position>20</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>e70ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>5b296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>23</position>
+            <position>21</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6b0ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>db296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>24</position>
+            <position>22</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>eb0ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>5f296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
-            <position>25</position>
+            <element>active</element>
+            <position>23</position>
             <sys_created_by>LGOMEZ</sys_created_by>
-            <sys_created_on>2018-04-03 19:59:34</sys_created_on>
-            <sys_id>6f0ecafc6f5d1384277218d22e3ee4ff</sys_id>
+            <sys_created_on>2018-09-24 16:58:13</sys_created_on>
+            <sys_id>df296174dbb8e708ecd688915b961947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sthc_carelink_table" sys_domain="global" view="Default view">a77ddf4f6f0cd740277218d22e3ee4a6</sys_ui_section>
             <sys_updated_by>LGOMEZ</sys_updated_by>
-            <sys_updated_on>2018-04-03 19:59:34</sys_updated_on>
+            <sys_updated_on>2018-09-24 16:58:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
