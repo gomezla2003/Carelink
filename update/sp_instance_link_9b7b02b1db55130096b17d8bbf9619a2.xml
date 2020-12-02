@@ -9,13 +9,13 @@
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <order>0</order>
+        <order>1</order>
         <roles/>
         <sc_cat_item/>
         <sc_category/>
         <short_description>Request a new account for Epic CareLink</short_description>
         <size>md</size>
-        <sp_column display_value="2">03d4dc45dbe15f0096b17d8bbf9619cb</sp_column>
+        <sp_column display_value="2">4de9969edbf0e85467c56c3913961908</sp_column>
         <sp_page display_value="carelink">c617eb656f54938061f06ea22e3ee42c</sp_page>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
@@ -23,7 +23,7 @@
         <sys_created_on>2018-04-06 22:22:17</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9b7b02b1db55130096b17d8bbf9619a2</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>I am a Community Affiliate</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
         <sys_policy/>
@@ -31,7 +31,7 @@
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>sp_instance_link_9b7b02b1db55130096b17d8bbf9619a2</sys_update_name>
         <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2018-04-16 16:04:25</sys_updated_on>
+        <sys_updated_on>2020-12-02 21:06:50</sys_updated_on>
         <title>I am a Community Affiliate</title>
         <type>page</type>
         <url/>

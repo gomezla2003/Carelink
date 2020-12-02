@@ -6,7 +6,7 @@
 
 $scope.submit = function(){
 
-	if ((!c.data.name)||(!c.data.description)||(!c.data.issue)){
+	if ((!c.data.name)||(!c.data.phone)||(!c.data.email)||(!c.data.description)||(!c.data.issue)){
 		swal("Missing Information", "Please complete the form before submitting", "error");
 	}
 	else{
@@ -140,15 +140,18 @@ $scope.submit = function(){
 })();  
 
 function createINC(){
-		gs.include('Cart');
-	var cartId = gs.generateGUID()	
-	var cart = new global.Cart(cartId);
-	var item = cart.addItem('4e6a2b6fdb28c4505c77a1ac0b961922',1);
-	cart.setVariable(item, 'u_preferred_contact_name',input.name);
-	cart.setVariable(item, 'comments',input.issue);
-	cart.setVariable(item, 'short_description', input.description);
-	var req = cart.placeOrder();
 	
+	var gr = new GlideRecord('incident');
+	gr.initialize();
+	gr.setValue('caller_id','510352986f21314068ceda0cbb3ee455');
+	gr.u_preferred_contact_number = input.phone;
+	gr.u_preferred_contact_name = input.email;
+	gr.setValue('location','e3f0b7b06ffad50061f09ea22e3ee404');
+	gr.setValue('category','application');
+	gr.setValue('subcategory','configuration');
+	gr.short_description = input.description;
+	gr.work_notes = input.issue;
+	gr.insert();
 }]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -156,7 +159,7 @@ function createINC(){
         <sys_created_on>2019-10-23 21:39:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d9eb2f6bdb68c4505c77a1ac0b961954</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>CareLink Issue</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
         <sys_policy/>
@@ -164,7 +167,7 @@ function createINC(){
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
         <sys_update_name>sp_widget_d9eb2f6bdb68c4505c77a1ac0b961954</sys_update_name>
         <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2020-01-29 23:08:56</sys_updated_on>
+        <sys_updated_on>2020-12-02 21:24:00</sys_updated_on>
         <template><![CDATA[
 <form class="form-horizontal">
 <fieldset>
@@ -188,7 +191,7 @@ function createINC(){
 <div class="form-group">
   <label class="col-md-4 control-label" for="name">Name</label>  
   <div class="col-md-5">
-  <input id="Name" ng-model="data.Name" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="Name" ng-model="data.name" type="text" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>

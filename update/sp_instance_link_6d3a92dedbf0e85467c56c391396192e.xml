@@ -4,7 +4,7 @@
         <class_name/>
         <color>primary</color>
         <css/>
-        <glyph>trash-o</glyph>
+        <glyph>chain-broken</glyph>
         <id/>
         <kb_article/>
         <kb_category/>
@@ -13,28 +13,28 @@
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description>Retire a CareLink account</short_description>
+        <short_description>Request support for the Carelink Platform</short_description>
         <size>md</size>
-        <sp_column display_value="4">0de9969edbf0e85467c56c3913961919</sp_column>
-        <sp_page display_value="carelink_deactivate">a5ab50de6f41974461f06ea22e3ee467</sp_page>
+        <sp_column display_value="6">05e9969edbf0e85467c56c391396191e</sp_column>
+        <sp_page/>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
         <sys_created_by>LGOMEZ</sys_created_by>
-        <sys_created_on>2018-04-06 22:22:20</sys_created_on>
+        <sys_created_on>2020-12-02 21:07:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>448b4af1db55130096b17d8bbf9619e9</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Deactivate a CareLink Account</sys_name>
+        <sys_id>6d3a92dedbf0e85467c56c391396192e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Report a Carelink Issue</sys_name>
         <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
-        <sys_update_name>sp_instance_link_448b4af1db55130096b17d8bbf9619e9</sys_update_name>
+        <sys_update_name>sp_instance_link_6d3a92dedbf0e85467c56c391396192e</sys_update_name>
         <sys_updated_by>LGOMEZ</sys_updated_by>
-        <sys_updated_on>2020-12-02 21:07:23</sys_updated_on>
-        <title>Deactivate a CareLink Account</title>
-        <type>page</type>
-        <url/>
+        <sys_updated_on>2020-12-02 21:10:56</sys_updated_on>
+        <title>Report a Carelink Issue</title>
+        <type>url</type>
+        <url>/sp?id=carelink_issue</url>
         <widget_parameters><![CDATA[{
 	"link_template": {
 		"value": "Circle Icon",
@@ -42,5 +42,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_link>
-    <sys_translated_text action="delete_multiple" query="documentkey=448b4af1db55130096b17d8bbf9619e9"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6d3a92dedbf0e85467c56c391396192e"/>
 </record_update>

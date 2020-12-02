@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Carelink - Container 3</name>
+        <order>3</order>
+        <sp_page display_value="carelink_index">b60bce79db15130096b17d8bbf9619d2</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-04-16 15:58:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>36739841dbe15f0096b17d8bbf9619f0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Carelink - Container 3</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_container_36739841dbe15f0096b17d8bbf9619f0</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2020-12-02 21:07:23</sys_updated_on>
+        <title/>
+        <width>container-fluid</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</application>
+        <comments/>
+        <file_path/>
+        <instance_id>c6bc9a15eddc5d00fd0fa7ca86ec61e1</instance_id>
+        <instance_name>shcdev</instance_name>
+        <name>sp_container_36739841dbe15f0096b17d8bbf9619f0</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Carelink - Container 3</name><order>3</order><sp_page display_value="carelink_index">b60bce79db15130096b17d8bbf9619d2</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>LGOMEZ</sys_created_by><sys_created_on>2018-04-16 15:58:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>36739841dbe15f0096b17d8bbf9619f0</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Carelink - Container 3</sys_name><sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope><sys_update_name>sp_container_36739841dbe15f0096b17d8bbf9619f0</sys_update_name><sys_updated_by>LGOMEZ</sys_updated_by><sys_updated_on>2020-12-02 21:07:23</sys_updated_on><title/><width>container-fluid</width></sp_container></record_update>]]></payload>
+        <payload_hash>-262413287</payload_hash>
+        <record_name>Carelink - Container 3</record_name>
+        <reverted_from/>
+        <source>c4855a12dbf0e85467c56c391396191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2020-12-02 21:07:23</sys_created_on>
+        <sys_id>d11a5adedbf0e85467c56c3913961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1762547fcfe0000001</sys_recorded_at>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2020-12-02 21:07:23</sys_updated_on>
+        <type>Container</type>
+        <update_guid>591a5ade0cf0e854e28fe5f1988df028</update_guid>
+        <update_guid_history>591a5ade0cf0e854e28fe5f1988df028:-262413287,a60a16de38f0e85444f8a728f3dc35d5:-1413826858,a1d9529eb5f0e85497614a4de7feb577:-262413287,e3051085d7e15f00fa7752e88cb14ef3:1553047002,b273984177e15f00dcb522be7b2942f1:-1022561481</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12-02-2020 14:07:48">ab2a1adadbf0e85467c56c391396199e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2020-12-02 21:07:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>2afa881298db408cacaa8e84be47e1b1</sys_id>
+        <sys_metadata>36739841dbe15f0096b17d8bbf9619f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Carelink - Container 3</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_scope_delete display_value="">231c1d8d49394470aaceba78a1becc64</sys_scope_delete>
+        <sys_update_name>sp_container_36739841dbe15f0096b17d8bbf9619f0</sys_update_name>
+        <sys_update_version display_value="sp_container_36739841dbe15f0096b17d8bbf9619f0">d11a5adedbf0e85467c56c3913961929</sys_update_version>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2020-12-02 21:07:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

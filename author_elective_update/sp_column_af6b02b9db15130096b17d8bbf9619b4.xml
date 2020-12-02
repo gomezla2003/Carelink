@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>3</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">ab6b02b9db15130096b17d8bbf9619b2</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-04-06 22:22:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>af6b02b9db15130096b17d8bbf9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_update_name>sp_column_af6b02b9db15130096b17d8bbf9619b4</sys_update_name>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-04-06 22:22:02</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</application>
+        <comments/>
+        <file_path/>
+        <instance_id>25bc9655a91c5d0058ebf191520622b5</instance_id>
+        <instance_name>shc</instance_name>
+        <name>sp_column_af6b02b9db15130096b17d8bbf9619b4</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>3</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ab6b02b9db15130096b17d8bbf9619b2</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>LGOMEZ</sys_created_by><sys_created_on>2018-04-06 22:22:02</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>af6b02b9db15130096b17d8bbf9619b4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope><sys_update_name>sp_column_af6b02b9db15130096b17d8bbf9619b4</sys_update_name><sys_updated_by>LGOMEZ</sys_updated_by><sys_updated_on>2018-04-06 22:22:02</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>695049542</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>13e068dfdbad9f00808f68461b961926</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2018-04-23 16:43:26</sys_created_on>
+        <sys_id>25f02cdfdbad9f00808f68461b961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>162f3637ef40000001</sys_recorded_at>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2018-04-23 16:43:26</sys_updated_on>
+        <type>Column</type>
+        <update_guid>eb6b02b95915130061a1bfbdaa12adb5</update_guid>
+        <update_guid_history>eb6b02b95915130061a1bfbdaa12adb5:695049542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12-02-2020 14:11:41">101bd216db34e85467c56c3913961912</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>LGOMEZ</sys_created_by>
+        <sys_created_on>2020-12-02 21:11:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>36319aab559741bd820edcb3e15f3749</sys_id>
+        <sys_metadata>af6b02b9db15130096b17d8bbf9619b4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="CareLink" source="x_sthc_carelink">825d1f0f6f0cd740277218d22e3ee4fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CareLink">825d1f0f6f0cd740277218d22e3ee4fe</sys_scope>
+        <sys_scope_delete display_value="">231c1d8d49394470aaceba78a1becc64</sys_scope_delete>
+        <sys_update_name>sp_column_af6b02b9db15130096b17d8bbf9619b4</sys_update_name>
+        <sys_update_version display_value="sp_column_af6b02b9db15130096b17d8bbf9619b4">25f02cdfdbad9f00808f68461b961953</sys_update_version>
+        <sys_updated_by>LGOMEZ</sys_updated_by>
+        <sys_updated_on>2020-12-02 21:11:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
